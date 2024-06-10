@@ -1,2 +1,5 @@
 #EMBO_IDAY 
-test2345
+#library(usethis)
+
+usethis::use_git_config(user.name = "lpistacchia", user.email = "letizia.pistacchia@uniroma1.it")
+usethis::git_sitrep()
