@@ -9,7 +9,7 @@ frequencies <- mean(rbinom(1, 2*N, fA) / (2*N))
 print(frequencies)
 ################
 
-#2 
+#2 Over many generations
 N <- 150
 fA <- 0.53
 gen <- 10
@@ -27,7 +27,8 @@ for (j in 1:nrepl) {
 
 ################
 
-#2 Initialize matrix to store frequencies for many generations
+#2 Over many generations
+#Initialize matrix to store frequencies for many generations
 frequencies <- matrix(0, nrepl, gen)
 for (j in 1:nrepl) {
   current_fA <- fA
@@ -45,7 +46,7 @@ hist(frequencies)
 ################
 
 
-#3
+#3 Effect of population size
 # small population (blue)
 N <- 100
 for (j in 1:10) {
